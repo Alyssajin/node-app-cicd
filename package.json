@@ -1,9 +1,19 @@
 {
   "name": "app-cicd",
+  "description": "A Node.js application with CI/CD setup",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
+  "dependencies": {
+    "express": "5.2.1"
+  },
+  "devDependencies": {
+    "mocha": "11.7.5",
+    "supertest": "7.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "./node_modules/.bin/mocha ./test/test.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +24,5 @@
   "bugs": {
     "url": "https://github.com/Alyssajin/node-app-cicd/issues"
   },
-  "homepage": "https://github.com/Alyssajin/node-app-cicd#readme",
-  "description": ""
+  "homepage": "https://github.com/Alyssajin/node-app-cicd#readme"
 }
